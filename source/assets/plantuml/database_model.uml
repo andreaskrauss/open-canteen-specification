@@ -1,0 +1,112 @@
+@startuml
+
+skinparam linetype ortho
+skinparam nodesep 40
+skinparam ranksep 40
+skinparam monochrome true
+skinparam shadowing false
+skinparam dpi 300
+
+skinparam StereotypeEBackgroundColor white
+
+entity "canteens_mealplan_items" as mealplan_items {
+    *id: int32 <<generated>>
+    --
+    *date: Date
+    *shop_id: int32 <<FK>>
+    *meal_id: int32 <<FK>>
+}
+
+entity "canteens_shops" as shops {
+    *id: int32 <<generated>>
+    --
+    *name_de: varchar(255)
+    name_en: varchar(255)
+    color: varchar(7)
+}
+
+entity "canteens_opening_hours_periods" as periods {
+    *id: int32 <<generated>>
+    --
+    *shop_id: int32 <<FK>>
+    periodDescription: varchar(255)
+    *start: Date
+    *end: Date  
+}
+    
+entity "canteens_opening_hours" as hours {
+    *id: int32 <<generated>>
+    --
+    *period_id: int32
+    *weekday: Weekday
+    *time: int32/4
+}
+
+entity "canteens_ingredients" as ingredients {
+    *id: varchar(8)
+    --
+    *name_de: varchar(255)
+    name_en: varchar(255)
+    symbol_url: varchar(255)
+}
+
+entity "canteens_tags" as tags {
+    *id: int32 <<generated>>
+    __
+    *name_de: varchar(255)
+    name_en: varchar(255)
+}
+
+entity "canteens_meals" as meals {
+    *id: int32 <<generated>>
+    __
+    *name_de: varchar(255)
+    name_en: varchar(255)
+}
+
+entity "canteens_prices" as prices {
+    *id: int32 <<generated>>
+    __
+    *item_id: int32 <<FK>>
+    *pricegroup: int32 <<FK>>
+    *price: varchar(32)
+}
+
+entity "canteens_pricegroups" as pricegroups {
+    *id: int32  <<generated>>
+    --
+    *name_de: varchar(255)
+    name_en: varchar(255)
+}
+
+entity "canteens_meals_ratings" as ratings {
+    *id: int32  <<generated>>
+    --
+    *meal_id: int32 <<FK>>
+    *uuid: varchar(36)
+    *rating: byte
+}
+
+enum Weekday<<enum>> {
+mon
+tue
+wed
+thu
+fri
+sat
+son
+}
+
+pricegroups -[hidden]-> Weekday
+
+shops ||-down-o{ periods
+periods ||-down-o{ hours
+meals }o-right-o{ ingredients
+meals }o-down-o{ tags
+meals ||--o{ ratings
+shops }o-right-|{ mealplan_items
+mealplan_items ||-right-|{ prices
+mealplan_items }|-down-|| meals
+pricegroups ||-left-|{ prices
+
+@enduml

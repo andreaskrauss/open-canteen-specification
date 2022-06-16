@@ -1,0 +1,5 @@
+sphinx
+sphinxcontrib.contentui
+sphinx_rtd_theme
+sphinxcontrib.plantuml
+sphinxemoji
