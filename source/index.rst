@@ -28,6 +28,12 @@ This project is based on the aged definition by the Studierendenwerk Ulm in thei
 Use Case
 ========
 
+*To be announced*
+
+
+The model
+=========
+
 In this chapter, you will find a sketch of an UML database model of this specification:
 
 .. uml:: assets/plantuml/database_model.uml
