@@ -41,11 +41,6 @@ jobs:
         shell: bash
       - name: Compress HTML docs
         run: tar -czf ocs-docs.tar.gz ./build
-      - name: Archive html docs
-        uses: actions/upload-artifact@v3
-        with:
-          name: ocs-docs
-          path: ${{ github.workspace }}/ocs-docs.tar.gz
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
