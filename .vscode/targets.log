@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 15 00:12:18 2022
+# Make data base, printed on Sat Mar 25 12:53:14 2023
 
 # Variables
 
@@ -15,11 +15,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
 # default
 .SHELLFLAGS := -c
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -31,17 +29,15 @@ CURDIR := /home/amkra/projects/open-canteen-specification
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"de","availableLanguages":{"*":"de"},"_languagePackId":"c16e0593a7939775308343c1c5195ac2.de","_translationsConfigFile":"/home/amkra/.vscode-server/data/clp/c16e0593a7939775308343c1c5195ac2.de/tcf.json","_cacheRoot":"/home/amkra/.vscode-server/data/clp/c16e0593a7939775308343c1c5195ac2.de","_resolvedLanguagePackCoreLocation":"/home/amkra/.vscode-server/data/clp/c16e0593a7939775308343c1c5195ac2.de/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/home/amkra/.vscode-server/data/clp/c16e0593a7939775308343c1c5195ac2.de/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/amkra/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/node
+_ = /home/amkra/.vscode-server/bin/92da9481c0904c6adfe372c12da3b7748d74bdcb/node
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
-# environment
-VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 9)
 BUILDDIR = build
 # environment
@@ -51,11 +47,13 @@ VSCODE_CWD = /mnt/c/Users/amkra/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/amkra/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/home/amkra/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/ARX-3.9.0/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/amkra/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/e/Program Files/Calibre/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/e/Projekte/Geckodriver/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/amkra/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/amkra/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/amkra/AppData/Local/atom/bin:/mnt/c/php/php.exe:/mnt/c/Users/amkra/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/amkra/anaconda3:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2021.1/bin:/mnt/c/Users/amkra/AppData/Roaming/npm/node_modules/@angular/cli:/mnt/c/Users/amkra/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/amkra/anaconda3/Scripts:/mnt/c/Users/amkra/anaconda3/Library/bin:/mnt/c/Users/amkra/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Users/amkra/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/snap/bin
+PATH = /home/amkra/.vscode-server/bin/92da9481c0904c6adfe372c12da3b7748d74bdcb/bin/remote-cli:/home/amkra/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/amkra/AppData/Roaming/nvm:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/e/Program Files/Calibre/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/e/Projekte/Geckodriver/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/amkra/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/amkra/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/amkra/AppData/Roaming/nvm:/mnt/c/php/php.exe:/mnt/c/Users/amkra/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/amkra/anaconda3:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2022.2.1/bin:/mnt/c/Users/amkra/AppData/Roaming/npm/node_modules/@angular/cli:/mnt/c/Users/amkra/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/amkra/anaconda3/Scripts:/mnt/c/Users/amkra/anaconda3/Library/bin:/mnt/c/Users/amkra/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Users/amkra/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/mnt/c/Users/amkra/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/snap/bin
 # environment
-VSCODE_LOG_STACK = false
+ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-6909c8f8-0081-49e1-ac03-89617cb16d24.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1cf5b296-96d1-4648-9d77-4eb1fe958ede.sock
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/amkra/AppData/Local/Temp/vscode-remote-wsl/92da9481c0904c6adfe372c12da3b7748d74bdcb/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -63,13 +61,11 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
 PWD = /home/amkra/projects/open-canteen-specification
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/31616_interop
+WSL_INTEROP = /run/WSL/17_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -105,7 +101,7 @@ NAME = DESKTOP-NH2DQ3V
 # makefile (from 'Makefile', line 6)
 SPHINXOPTS = 
 # environment
-VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/amkra/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/amkra/.vscode/extensions/ms-vscode-remote.remote-wsl-0.76.1
 # default
 MAKE_COMMAND := make
 # default
@@ -149,13 +145,11 @@ TERM = xterm-256color
 # makefile (from 'Makefile', line 8)
 SOURCEDIR = source
 # environment
-VSCODE_EXTHOST_WILL_SEND_SOCKET = true
-# environment
 WSL_DISTRO_NAME = Ubuntu-20.04
 # environment
 MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=72/1024=7%, Rehash=0, Collisions=4/107=4%
+# Load=69/1024=7%, Rehash=0, Collisions=4/104=4%
 
 # Pattern-specific Variable Values
 
@@ -245,6 +239,6 @@ help:
 # strcache performance: lookups = 31 / hit rate = 38%
 # hash-table stats:
 # Load=19/8192=0%, Rehash=0, Collisions=1/31=3%
-# Finished Make data base on Wed Jun 15 00:12:18 2022
+# Finished Make data base on Sat Mar 25 12:53:14 2023
 
  

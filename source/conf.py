@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Open Canteens Specification'
-copyright = '2022, Andreas Krauss'
+copyright = '2023, Andreas Krauss'
 author = 'Andreas Krauss'
 
 # The full version, including alpha/beta/rc tags
@@ -37,6 +37,7 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinxcontrib.contentui',
     'sphinxcontrib.plantuml',
+    'sphinxcontrib.mermaid',
     'sphinxemoji.sphinxemoji',
 ]
 
@@ -70,4 +71,4 @@ todo_include_todos = True
 
 
 # -- Command for plantUML Support --------------------------------------------
-plantuml = 'java -jar /path/to/plantuml.jar'
+# plantuml = 'java -jar /path/to/plantuml.jar'
