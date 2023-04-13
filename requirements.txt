@@ -1,5 +1,6 @@
 sphinx
 sphinxcontrib.contentui
+sphinx-design
 sphinx_rtd_theme
 sphinx-copybutton
 sphinxcontrib.plantuml

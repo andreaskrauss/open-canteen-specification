@@ -31,15 +31,15 @@ release = '0.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_rtd_theme',
+    'sphinx_design',
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
-    'sphinx.ext.autosectionlabel',
-    'sphinx_rtd_theme',
-    'sphinx_copybutton',
-    'sphinxcontrib.contentui',
     'sphinxcontrib.plantuml',
     'sphinxcontrib.mermaid',
     'sphinxemoji.sphinxemoji',
+    'sphinx_copybutton',
+    'sphinx.ext.autosectionlabel',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
